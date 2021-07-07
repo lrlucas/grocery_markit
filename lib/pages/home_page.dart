@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_markit/widgets/custom_appbar.dart';
+import 'package:grocery_markit/widgets/custom_direction.dart';
+import 'package:grocery_markit/widgets/custom_search.dart';
 
 class HomePage extends StatelessWidget {
   static final routeName = '/home';
@@ -11,7 +13,13 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           // Custom Appbar
-          CustomAppbar()
+          CustomAppbar(),
+
+          // Location and direction widget
+          CustomDirection(),
+
+          // search widget
+          CustomSearch()
         ],
       ),
     );
