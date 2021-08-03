@@ -14,7 +14,7 @@ class CustomDirection extends StatelessWidget {
             width: 240,
             height: 50,
             decoration: BoxDecoration(
-              color: Color(0xffe2e5ef),
+              color: Color(0xffF4F8FF),
               borderRadius: BorderRadius.all(Radius.circular(45.0)),
             ),
             child: Row(
@@ -28,6 +28,7 @@ class CustomDirection extends StatelessWidget {
                   'Refugio Sta Fe 202',
                   style: TextStyle(
                     fontSize: 15.0,
+                    color: Color(0xff646E7C),
                   ),
                 ),
                 Icon(

@@ -11,7 +11,7 @@ class CustomSearch extends StatelessWidget {
         children: [
           Spacer(),
           Container(
-            width: 370,
+            width: 390,
             height: 50,
             decoration: BoxDecoration(
               color: Colors.white,

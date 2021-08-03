@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_markit/widgets/custom_appbar.dart';
+import 'package:grocery_markit/widgets/custom_categories_list.dart';
+import 'package:grocery_markit/widgets/custom_category_list2.dart';
 import 'package:grocery_markit/widgets/custom_direction.dart';
+import 'package:grocery_markit/widgets/custom_promotion_banner.dart';
 import 'package:grocery_markit/widgets/custom_search.dart';
 
 class HomePage extends StatelessWidget {
@@ -19,7 +22,14 @@ class HomePage extends StatelessWidget {
           CustomDirection(),
 
           // search widget
-          CustomSearch()
+          CustomSearch(),
+
+          // categories supermercado, farmacia, restaurantes viajes y boletos
+          // CustomCategoriesList(),
+          CustomCategoryList2(),
+
+          // promotion banner
+          CustomPromotionBanner()
         ],
       ),
     );
