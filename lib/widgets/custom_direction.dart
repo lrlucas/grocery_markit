@@ -6,7 +6,7 @@ class CustomDirection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 20.0),
+      padding: const EdgeInsets.only(top: 8.0),
       child: Row(
         children: [
           Spacer(),
@@ -14,7 +14,7 @@ class CustomDirection extends StatelessWidget {
             width: 240,
             height: 50,
             decoration: BoxDecoration(
-              color: Color(0xffF4F8FF),
+              color: Color(0xFFDEE2E9),
               borderRadius: BorderRadius.all(Radius.circular(45.0)),
             ),
             child: Row(

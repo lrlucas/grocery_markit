@@ -120,3 +120,80 @@ class _CustomAvatar extends StatelessWidget {
     );
   }
 }
+
+class CustomAppBar2 extends StatelessWidget implements PreferredSizeWidget {
+  const CustomAppBar2({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      elevation: 0,
+      leading: Image.asset('assets/images/menu.png'),
+      backgroundColor: Colors.transparent,
+      centerTitle: false,
+      title: Image.asset('assets/images/logo.png'),
+      actions: [
+        Padding(
+          padding: const EdgeInsets.all(7.0),
+          child: Container(
+            width: 90,
+            height: 15,
+            decoration: BoxDecoration(
+              color: Color(0xff47d17c),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(7.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    backgroundImage:
+                        AssetImage('assets/images/profile-avatar.png'),
+                  ),
+                  Text('400')
+                ],
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(right: 10.0),
+          child: Center(
+            child: Stack(
+              children: [
+                Container(
+                  width: 40,
+                  height: 40,
+                  child: Image.asset('assets/images/notificacion.png'),
+                ),
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  child: Container(
+                    height: 18,
+                    width: 18,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    child: Center(
+                      child: Text(
+                        '1',
+                        style: TextStyle(
+                          fontSize: 12,
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(60);
+}

@@ -50,10 +50,35 @@ flutter:
     - assets/images/supermercado.svg
     - assets/images/promotion_banner_1.png
     - assets/images/menu.png
+    - assets/images/logo.png
+    - assets/images/profile-avatar.png
+    - assets/images/notificacion.png
     - assets/images/category1.png
     - assets/images/category2.png
     - assets/images/category3.png
     - assets/images/category4.png
+    - assets/images/walmart-logo.png
+    - assets/images/soriana-logo.png
+    - assets/images/fresh-market-logo.png
+    - assets/images/icon_bad.png
+    - assets/images/icon_home.png
+    - assets/images/icon_settings.png
+    - assets/images/icon_user.png
+    - assets/images/zanahoria.png
+    - assets/images/milk.png
+    - assets/images/meat-3.png
+    - assets/images/liquor.png
+    - assets/images/recomended_1.png
+    - assets/images/recomended_2.png
+    - assets/images/recomended_3.png
+    - assets/images/vegetable_1.png
+    - assets/images/vegetable_2.png
+    - assets/images/vegetable_3.png
+    - assets/images/sugerencia_1.png
+    - assets/images/sugerencia_2.png
+    - assets/images/sugerencia_3.png
+    - assets/images/sugerencia_4.png
+    - assets/images/sugerencia_5.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

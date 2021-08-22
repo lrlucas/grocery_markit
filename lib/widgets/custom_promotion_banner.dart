@@ -20,22 +20,26 @@ class CustomPromotionBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       physics: BouncingScrollPhysics(),
       child: Padding(
-        padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0),
+        padding: const EdgeInsets.only(
+          left: 20.0,
+          right: 20.0,
+        ),
         child: Row(
           children: List.generate(promotionList.length, (index) {
             final promotion = promotionList[index];
             return Padding(
               padding: const EdgeInsets.only(right: 10.0),
               child: Container(
-                width: 381,
+                width: 370,
                 height: 101,
                 decoration: BoxDecoration(
                   color: Color(promotion['color']),
-                  borderRadius: BorderRadius.circular(20.0),
+                  borderRadius: BorderRadius.circular(15.0),
                 ),
                 child: Row(
                   children: [

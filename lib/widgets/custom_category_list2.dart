@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_markit/pages/category/category_page.dart';
 
 class CustomCategoryList2 extends StatelessWidget {
   CustomCategoryList2({Key? key}) : super(key: key);
@@ -16,8 +17,9 @@ class CustomCategoryList2 extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 12.0, right: 12.0),
       child: SizedBox(
-        height: size.height * .37,
+        height: size.height * .34,
         child: GridView(
+          physics: const NeverScrollableScrollPhysics(),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 1.0,
@@ -29,6 +31,14 @@ class CustomCategoryList2 extends StatelessWidget {
             return InkWell(
               onTap: () {
                 // navegar a la pantalla de CategoryDetail
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => CategoryDetailPage(
+                      title: category['name'],
+                    ),
+                  ),
+                );
               },
               child: Column(
                 children: [

@@ -6,13 +6,17 @@ class CustomSearch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 20.0),
+      padding: const EdgeInsets.only(
+        top: 15.0,
+        right: 10.0,
+        left: 10.0,
+      ),
       child: Row(
         children: [
           Spacer(),
           Container(
-            width: 390,
             height: 50,
+            width: 370,
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.all(
